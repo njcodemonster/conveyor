@@ -1,0 +1,13 @@
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\bin\Release\netcoreapp2.2\win-x64\conveyorcontroller.exe
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\bin\Release\netcoreapp2.2\win-x64\conveyorcontroller.deps.json
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\bin\Release\netcoreapp2.2\win-x64\conveyorcontroller.runtimeconfig.json
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\bin\Release\netcoreapp2.2\win-x64\conveyorcontroller.runtimeconfig.dev.json
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\bin\Release\netcoreapp2.2\win-x64\conveyorcontroller.dll
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\bin\Release\netcoreapp2.2\win-x64\conveyorcontroller.pdb
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\obj\Release\netcoreapp2.2\win-x64\conveyorcontroller.AssemblyInfoInputs.cache
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\obj\Release\netcoreapp2.2\win-x64\conveyorcontroller.AssemblyInfo.cs
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\obj\Release\netcoreapp2.2\win-x64\conveyorcontroller.dll
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\obj\Release\netcoreapp2.2\win-x64\conveyorcontroller.pdb
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\bin\Release\netcoreapp2.2\win-x64\hostpolicy.dll
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\bin\Release\netcoreapp2.2\win-x64\hostfxr.dll
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\obj\Release\netcoreapp2.2\win-x64\conveyorcontroller.csprojAssemblyReference.cache

@@ -1,0 +1,13 @@
+C:\fashionpass\conveyor\conveyorpoller\conveyorpoller\bin\Debug\netcoreapp2.2\conveyorpoller.deps.json
+C:\fashionpass\conveyor\conveyorpoller\conveyorpoller\bin\Debug\netcoreapp2.2\conveyorpoller.runtimeconfig.json
+C:\fashionpass\conveyor\conveyorpoller\conveyorpoller\bin\Debug\netcoreapp2.2\conveyorpoller.runtimeconfig.dev.json
+C:\fashionpass\conveyor\conveyorpoller\conveyorpoller\bin\Debug\netcoreapp2.2\conveyorpoller.dll
+C:\fashionpass\conveyor\conveyorpoller\conveyorpoller\bin\Debug\netcoreapp2.2\conveyorpoller.pdb
+C:\fashionpass\conveyor\conveyorpoller\conveyorpoller\bin\Debug\netcoreapp2.2\System.Net.Http.WebRequest.dll
+C:\fashionpass\conveyor\conveyorpoller\conveyorpoller\bin\Debug\netcoreapp2.2\System.Net.Http.WebRequest.xml
+C:\fashionpass\conveyor\conveyorpoller\conveyorpoller\obj\Debug\netcoreapp2.2\conveyorpoller.csprojAssemblyReference.cache
+C:\fashionpass\conveyor\conveyorpoller\conveyorpoller\obj\Debug\netcoreapp2.2\conveyorpoller.AssemblyInfoInputs.cache
+C:\fashionpass\conveyor\conveyorpoller\conveyorpoller\obj\Debug\netcoreapp2.2\conveyorpoller.AssemblyInfo.cs
+C:\fashionpass\conveyor\conveyorpoller\conveyorpoller\obj\Debug\netcoreapp2.2\conveyorpoller.csproj.CopyComplete
+C:\fashionpass\conveyor\conveyorpoller\conveyorpoller\obj\Debug\netcoreapp2.2\conveyorpoller.dll
+C:\fashionpass\conveyor\conveyorpoller\conveyorpoller\obj\Debug\netcoreapp2.2\conveyorpoller.pdb

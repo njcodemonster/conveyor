@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "conveyorpoller", "conveyorpoller\conveyorpoller.csproj", "{0EEC95DB-F21F-4C4B-B629-79600A47C23C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "conveyorcontroller", "conveyorcontroller\conveyorcontroller.csproj", "{9312646D-A0A2-44E4-BE13-0A213952BAEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EEC95DB-F21F-4C4B-B629-79600A47C23C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EEC95DB-F21F-4C4B-B629-79600A47C23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EEC95DB-F21F-4C4B-B629-79600A47C23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EEC95DB-F21F-4C4B-B629-79600A47C23C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9312646D-A0A2-44E4-BE13-0A213952BAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9312646D-A0A2-44E4-BE13-0A213952BAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9312646D-A0A2-44E4-BE13-0A213952BAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9312646D-A0A2-44E4-BE13-0A213952BAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE4408B7-4CD8-4A2A-885A-2F4B89037E9D}
+	EndGlobalSection
+EndGlobal

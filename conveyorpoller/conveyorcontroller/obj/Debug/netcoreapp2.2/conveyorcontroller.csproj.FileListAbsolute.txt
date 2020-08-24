@@ -1,0 +1,10 @@
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\bin\Debug\netcoreapp2.2\conveyorcontroller.deps.json
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\bin\Debug\netcoreapp2.2\conveyorcontroller.runtimeconfig.json
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\bin\Debug\netcoreapp2.2\conveyorcontroller.runtimeconfig.dev.json
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\bin\Debug\netcoreapp2.2\conveyorcontroller.dll
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\bin\Debug\netcoreapp2.2\conveyorcontroller.pdb
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\obj\Debug\netcoreapp2.2\conveyorcontroller.AssemblyInfoInputs.cache
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\obj\Debug\netcoreapp2.2\conveyorcontroller.AssemblyInfo.cs
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\obj\Debug\netcoreapp2.2\conveyorcontroller.dll
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\obj\Debug\netcoreapp2.2\conveyorcontroller.pdb
+C:\fashionpass\conveyor\conveyorpoller\conveyorcontroller\obj\Debug\netcoreapp2.2\conveyorcontroller.csprojAssemblyReference.cache
