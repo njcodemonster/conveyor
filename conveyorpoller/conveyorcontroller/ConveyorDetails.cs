@@ -103,6 +103,13 @@ namespace conveyorcontroller
             conveyorAdjustment.Add(new conveyorRange(34931, 36340,14), 0);
             conveyorAdjustment.Add(new conveyorRange(36341, 37970,15), 1630);
             conveyorAdjustment.Add(new conveyorRange(37971, 39600,15), 0);
+            ////66666////
+            conveyorAdjustment.Add(new conveyorRange(39601, 40740, 16), 0);
+            conveyorAdjustment.Add(new conveyorRange(40741, 42140, 17), 1400);
+            conveyorAdjustment.Add(new conveyorRange(42141, 43540, 17), 0);
+            conveyorAdjustment.Add(new conveyorRange(43541, 45170, 18), 1630);
+            conveyorAdjustment.Add(new conveyorRange(45171, 46800, 18), 0);
+            
         }
       
     }

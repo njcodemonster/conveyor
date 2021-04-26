@@ -23,6 +23,8 @@ namespace conveyorcontroller
         
         private static SerialPort conveyorConnection = new SerialPort();
         private static SerialPort conveyorConnection2 = new SerialPort();
+        private static Boolean conveyorConnection1Opening = false;
+        private static Boolean conveyorConnection2Opening = false;
         private enum conveyerstatus
         {
             busy = 2,
@@ -63,19 +65,33 @@ namespace conveyorcontroller
         }
         private  bool ConnectSerial(Int32 connection=1)
         {
+            Console.WriteLine("CONNECT IS CALLED");
             SerialPort conveyorConnectioninternal = new SerialPort();
             if(connection == 2)
             {
+                Console.WriteLine("CONN2");
                 conveyorConnectioninternal = conveyorConnection2;
             }
             else
             {
+                Console.WriteLine("CONN1");
                 conveyorConnectioninternal = conveyorConnection;
             }
             if (conveyorConnectioninternal.IsOpen)
             {
                 return true;
             }
+            if(connection  == 2 && conveyorConnection2Opening)
+            {
+                Console.WriteLine("Another thread is stuck in trying to open connection2 on port COM4");
+                return false;
+            }
+            if(connection ==1 && conveyorConnection1Opening)
+            {
+                Console.WriteLine("Another thread is stuck in trying to open connection1 on port COM3");
+                return false;
+            }
+            
             try
             {
                 Console.WriteLine("Opening COM"+connection.ToString()+"...");
@@ -103,8 +119,9 @@ namespace conveyorcontroller
                     conveyorConnection2.DtrEnable = true;
                     conveyorConnection2.ReadTimeout = 5000;
                     conveyorConnection2.WriteBufferSize = 1024;
-
+                    conveyorConnection2Opening = true;
                     conveyorConnection2.Open();
+                    conveyorConnection2Opening = false;
                 }
                 else
                 {
@@ -119,19 +136,36 @@ namespace conveyorcontroller
                     conveyorConnection.DtrEnable = true;
                     conveyorConnection.ReadTimeout = 5000;
                     conveyorConnection.WriteBufferSize = 1024;
-
+                    conveyorConnection1Opening = true;
                     conveyorConnection.Open();
+                    conveyorConnection1Opening = false;
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error opening COM"+connection.ToString()+"!");
                 Console.WriteLine(ex.Message);
+                if (connection == 1)
+                {
+                    conveyorConnection1Opening = false;
+                }
+                else
+                {
+                    conveyorConnection2Opening = false;
+                }
                 return false;
             }
 
             Console.WriteLine("Open COM1"+connection.ToString()+"Successful.");
             status = conveyerstatus.waiting.ToString();
+            if (connection == 1)
+            {
+                conveyorConnection1Opening = false;
+            }
+            else
+            {
+                conveyorConnection2Opening = false;
+            }
             return true;
         }
         public bool connectPort(Int32 connection = 1)
@@ -203,10 +237,17 @@ namespace conveyorcontroller
 
                 StringBuilder sb = new StringBuilder();
                 char rdChar = (char)0;
-                while ((rdChar = (char)internalserial.ReadByte()) != '\r')
+                if (internalserial.BytesToRead > 2)
+                {
+                    while ((rdChar = (char)internalserial.ReadByte()) != '\r')
+                        sb.Append(rdChar);
                     sb.Append(rdChar);
-                sb.Append(rdChar);
-                Console.WriteLine("Read COM" + connection.ToString() + " Successful.");
+                    Console.WriteLine("Read COM" + connection.ToString() + " Successful.");
+                }
+                else
+                {
+                    sb.Append('x'); sb.Append('x'); sb.Append('x'); sb.Append('x'); sb.Append('x'); sb.Append('x'); sb.Append('x'); sb.Append('x'); sb.Append('x'); sb.Append('x'); sb.Append('x'); sb.Append('x'); sb.Append('x');
+                }
                 return sb.ToString();
             }
             catch (Exception)
@@ -338,9 +379,10 @@ namespace conveyorcontroller
                         Thread.Sleep(500);
                         WriteCommand("$0G" + heading.ToString(), connection);
                     }
-                   
-                    
-                    string response = ReadLine(connection);
+
+
+                     string response = ReadLine(connection);
+                    //string response = "pppppp";
                     //CloseSerial();
                     if (response.ToLower().Contains("ack"))
                     {

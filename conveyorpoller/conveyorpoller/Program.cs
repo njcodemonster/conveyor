@@ -20,7 +20,7 @@ namespace conveyorpoller
             Dispatcher.DynamicRoutes.Add("/", new Action<HttpRequestContext>(test));
             Dispatcher.DynamicRoutes.Add("\\", new Action<HttpRequestContext>(test));
             Dispatcher.DynamicRoutes.Add("List", new Action<HttpRequestContext>(EchoAllCommands));
-            Dispatcher.DynamicRoutes.Add(".well-known/pki-validation/0B6C958312856BC82996968539940B49.txt", new Action<HttpRequestContext>(validation));
+            Dispatcher.DynamicRoutes.Add(".well-known/pki-validation/0E19E11A3A3ED0CD524D4B83AA93AEF3.txt", new Action<HttpRequestContext>(validation));
             Dispatcher.DynamicRoutes.Add("CheckBussy", new Action<HttpRequestContext>(CheckBussy));
             Dispatcher.DynamicRoutes.Add("CheckStatusAll", new Action<HttpRequestContext>(CheckStatusAll)); 
             Dispatcher.DynamicRoutes.Add("CheckStatusAllAndClear", new Action<HttpRequestContext>(CheckStatusAllAndClear));
@@ -67,7 +67,7 @@ namespace conveyorpoller
             ctx.BaseContext.Response.Headers.Add("Access-Control-Allow-Origin", "*");
             // string url = ctx.Parameters["url"];
             //await ConveyorAcctions.AddCommand(new Command(1, 2));
-            ctx.SendReply("53F165AF507077455227E232299C030AD66AA3355C915969CBE6FDBAF1EFD94E comodoca.com 5e25d0d144b50");
+            ctx.SendReply("B41C7209AA5CC7065702AE76B8CE7B8B679AA10CD7FC388120B79C2144AAA8F9 comodoca.com FL1T55bZZc5s5jYFsWr5");
             Console.WriteLine("Validator is called");
         }
         public static async void test(HttpRequestContext ctx)
